@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<style>
+.div {display: block; min-width: 300px; min-height: 100px;}
+.block {
+width: 50%; height: 300px;
+float: left;
+}
+.button {
+width: 50%; height: 100px;
+backgroud: none;
+border: solid 1px red;
+float: left;
+}
+.red {
+background-color: red;
+}.yellow {
+background-color: yellow;
+}.orange {
+background-color: orange;
+}.green {
+background-color: green;
+}
+</style>
+<body>
+
+<div id="one" class="block red">1</div>
+<div id="two" class="block yellow">2</div>
+<div onclick="myFunction(this, 'red')" class="button anticlockwise">Anticlockwise</div>
+<div onclick="myFunction(this, 'red')" class="button clockwise">Clockwise</div>
+<div id="three" class="block orange">3</div>
+<div id="four" class="block green">4</div> 
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<script>
+var a = jQuery('.block')
+console.log(a);
+function myFunction(element, color) {
+ 
+for (let i = 0; i < a.length; i++) {
+  var currentCLass = a[i].classList[1];
+  if (i == 3 ) {
+    var nextCLass = 'red';
+  }else {
+    var nextCLass = a[i+1].classList[1];
+  }
+  $(a[i]).removeClass(currentCLass);
+  $(a[i]).addClass(nextCLass);
+
+}

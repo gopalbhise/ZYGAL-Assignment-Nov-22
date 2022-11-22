@@ -1,0 +1,28 @@
+
+        .box { 
+            height: 250px; 
+            width: 150px; 
+            border-right: 5px solid; 
+            background-color: red; 
+        } 
+        .box1 { 
+            height: 250px; 
+            width: 150px; 
+            border-right: 5px solid; 
+            background-color: yellow; 
+        } 
+   
+        .box2 { 
+            height: 250px; 
+            width: 150px; 
+            border-right: 5px solid; 
+            background-color:orange; 
+        } 
+        .box3 { 
+            height: 250px; 
+            width: 150px; 
+            border-right: 5px solid; 
+            background-color:green; 
+        } 
+        
+   
